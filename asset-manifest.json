@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/reddingsbrigade-enschede/static/css/main.e3a2c881.css",
+    "main.js": "/reddingsbrigade-enschede/static/js/main.1b9a9105.js",
+    "static/js/787.19aefc9f.chunk.js": "/reddingsbrigade-enschede/static/js/787.19aefc9f.chunk.js",
+    "static/media/ow.jpeg": "/reddingsbrigade-enschede/static/media/ow.4f1e6539354511973c08.jpeg",
+    "static/media/pool.jpg": "/reddingsbrigade-enschede/static/media/pool.d8e762506ef3577bece9.jpg",
+    "static/media/ow2.jpg": "/reddingsbrigade-enschede/static/media/ow2.32667bac8cf3e827c43d.jpg",
+    "static/media/strand.jpeg": "/reddingsbrigade-enschede/static/media/strand.4a83c465b83147367736.jpeg",
+    "static/media/event.jpg": "/reddingsbrigade-enschede/static/media/event.80db62902c42d8f58375.jpg",
+    "static/media/toezicht.jpg": "/reddingsbrigade-enschede/static/media/toezicht.a4706701af2e3b0e745d.jpg",
+    "static/media/rescue.png": "/reddingsbrigade-enschede/static/media/rescue.3d2691cce31f439085c4.png",
+    "index.html": "/reddingsbrigade-enschede/index.html",
+    "main.e3a2c881.css.map": "/reddingsbrigade-enschede/static/css/main.e3a2c881.css.map",
+    "main.1b9a9105.js.map": "/reddingsbrigade-enschede/static/js/main.1b9a9105.js.map",
+    "787.19aefc9f.chunk.js.map": "/reddingsbrigade-enschede/static/js/787.19aefc9f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e3a2c881.css",
+    "static/js/main.1b9a9105.js"
+  ]
+}
