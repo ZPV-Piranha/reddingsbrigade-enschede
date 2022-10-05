@@ -37,12 +37,12 @@ export const Logo: FC<Props> = ({
     const {width} = useSize(target) || {width: 0}
 
     return <div className={className} ref={target}>
-        <LogoImage collapsed={collapsed ?? false} className={collapsed ? 'w-1/12' : 'w-3/5'}/>
+        <LogoImage collapsed={collapsed ?? false} className={collapsed ? 'w-1/12' : 'w-40'}/>
         {!collapsed &&
-            <div className={'font-bold font-sans pt-'}
+            <div className={'font-bold font-sans flex-col w-fit'}
                  style={{fontSize: `${width * 0.039}px`, paddingLeft: `4.5%`, paddingTop: `2%`}}>
                 <p className={regionClassName + ' text-base block font-bold leading-none text-sm' + (region?.length > 0 ? '' : ' hidden')}>{region}</p>
-                <p className={associationClassName + ' leading-none text-base font-bold block text-sm'}>{association}</p>
+                <p className={associationClassName + ' leading-none text-base font-bold text-sm'}>{association}</p>
             </div>
         }
     </div>;

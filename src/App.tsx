@@ -17,31 +17,30 @@ function App() {
         <div className="bg-slate-50 min-w-full min-h-full">
             <Header>
             </Header>
-            <div className="w-full h-[30em] flex justify-center">
-                <div className="max-w-7xl flex space-between w-full bg-white">
-                    <div className="p-16 w-3/4 flex flex-col bg-orange-500 text-slate-50">
+            <div className="w-full md:h-full flex justify-center">
+                <div className="max-w-7xl flex space-between w-full bg-white flex-col-reverse sm:flex-row">
+                    <div className="p-16 w-full sm:w-3/4 flex flex-col bg-orange-500 text-slate-50">
                         <h1 className="font-medium leading-loose text-2xl mt-0 ml-2 mb-2 inline">Reddingsbrigade
                             ZPV-Piranha</h1>
                         <p className="leading-loose mt-4">In het mooie Twente zijn wij sinds 2011 actief als afdeling Reddingszwemmen van Zwem- en Polovereniging Piranha en onderdeel van Reddingsbrigade Nederland.</p>
                         <p className="leading-loose my-4">Wij houden ons bezig met training, wedstrijden, waterhulpverlening, eerste hulp en toezicht.</p>
                         <p className="leading-loose">Voor toezicht en waterhulpverlening tijdens evenementen op en aan het water beschikken wij over een reddingsvlet en getrainde lifeguards.</p>
                     </div>
-                    <div className="bg-[bottom_-5rem_left_4rem] bg-cover overflow-hidden relative"
+                    <div className="h-80 sm:h-full bg-[top_-3rem_right_0rem] sm:bg-[bottom_0rem_right_0rem] xl:bg-[bottom_0rem_right_0rem] overflow-hidden bg-cover overflow-hidden lg:w-full w-full sm:w-1/2"
                          style={{backgroundImage: `url(${ow2})`}}>
-                        <div className="bg-orange-500 h-[20em] w-[80em] -left-[44em] relative rotate-[75deg]"></div>
-                        <img src={Rescue} className="" width="70em" alt=""/>
+                        <div className="bg-orange-500 h-[20em] w-[80em] -left-[44em] lg:flex relative hidden rotate-[75deg]"></div>
                     </div>
                 </div>
             </div>
             <div className="w-full flex justify-center">
-                <div className="max-w-7xl flex space-between w-full bg-white">
-                    <div className="px-16 pt-12 pb-12  w-1/2">
+                <div className="max-w-7xl flex space-between w-full bg-white sm:flex-row flex-col">
+                    <div className="sm:px-16 sm:pt-12 sm:pb-16 w-full sm:w-1/2 h-64 sm:h-full px-8 py-6">
                         <div
                             className="w-full h-content bg-center bg-cover overflow-hidden h-full flex justify-center items-center align-center"
                             style={{backgroundImage: `url(${pool})`}}>
                         </div>
                     </div>
-                    <div className="grow w-1/2 text-gray-600 px-16 py-12">
+                    <div className="grow sm:w-1/2 text-gray-600 px-16 sm:py-12 py-0">
                         <h1 className="font-medium leading-loose text-2xl mt-0 mb-2 inline">Opleidingen in het
                             zwembad</h1>
                         <p className="leading-loose my-6">In het zwembad bieden wij de diploma's lifesaver 1,2 en 3 aan. Het doel van deze cursussen is om de zelfredzaamheid te vergroten en de basisvaardigheden van het zwemmend redden onder de knie te krijgen.</p>
@@ -50,13 +49,13 @@ function App() {
                 </div>
             </div>
             <div className="w-full flex justify-center">
-                <div className="max-w-7xl flex space-between w-full bg-white">
-                    <div className="grow w-1/2 text-gray-600 px-16 py-12">
+                <div className="max-w-7xl flex space-between w-full bg-white sm:flex-row flex-col-reverse">
+                    <div className="grow sm:w-1/2 text-gray-600 px-16 sm:py-12 py-0">
                         <h1 className="font-medium leading-loose text-2xl mt-0 mb-2 inline">Lifeguard open water</h1>
                         <p className="leading-loose my-6">Het werkgebied van de reddingsbrigade Enschede bestaat voornamelijk uit open wateren zoals het Rutbeek en het Twentekanaal. Wij bieden binnen deze gebieden de opleiding lifeguard. Je leert binnen deze opleiding hoe je toezicht kan houden op evenementen op en om het water en hulp te verlenen waar nodig.</p>
-                        <p className="leading-loose my-6">Wil je meer weten opleidingen? Lees dan verder op de website van Reddingsbrigade Nederland.</p>
+                        <p className="leading-loose my-6">Wil je meer weten over opleidingen? Lees dan verder op de website van <a className="text-orange-400" href="https://www.reddingsbrigade.nl/wij/wat-wij-doen/opleidingen/">Reddingsbrigade Nederland</a>.</p>
                     </div>
-                    <div className="px-16 pt-12 pb-16  w-1/2">
+                    <div className="sm:px-16 sm:pt-12 sm:pb-16 w-full sm:w-1/2 h-64 sm:h-full px-8 py-6">
                         <div
                             className="w-full h-content bg-center bg-cover overflow-hidden h-full flex justify-center items-center align-center"
                             style={{backgroundImage: `url(${ow})`}}>
@@ -65,28 +64,28 @@ function App() {
                 </div>
             </div>
             <div className="w-full flex justify-center">
-                <div className="max-w-7xl flex space-between w-full bg-white">
-                    <div className="px-16 pt-12 pb-16  w-1/2">
+                <div className="max-w-7xl flex space-between w-full bg-white sm:flex-row flex-col">
+                    <div className="sm:px-16 sm:pt-12 sm:pb-16 w-full sm:w-1/2 h-64 sm:h-full px-8 py-6">
                         <div
                             className="w-full h-content bg-center bg-cover overflow-hidden h-full flex justify-center items-center align-center"
                             style={{backgroundImage: `url(${strand})`}}>
                         </div>
                     </div>
-                    <div className="grow w-1/2 text-gray-600 px-16 py-12">
-                        <h1 className="font-medium leading-loose text-2xl mt-0 mb-2 inline">Strandwachten</h1>
+                    <div className="grow sm:w-1/2 text-gray-600 px-16 sm:py-12 py-0">
+                        <h1 className="font-medium leading-loose text-2xl mt-0 mb-2 inline">Strandwacht</h1>
                         <p className="leading-loose my-6">ZPV Piranha trekt als onderdeel van de Universiteit Twente leden uit alle windstreken aan. Lijkt het je leuk om stranddiensten te draaien in Den Helder, op Texel of misschien zelfs in Duitsland? Vanuit Reddingsbrigade Enschede is het mogelijk om met een aantal van onze leden mee te gaan om te bewaking op het strand!</p>
-                        <p className="leading-loose my-6">Veel van deze externe brigades bieden ook weer opleidingen aan die je nog veel inzicht in het reddingsbrigade werk kunnen geven. Sommige stranden bieden zelfs de mogelijkheid tot een betaalde bijbaan als Lifeguard!</p>
+                        <p className="leading-loose my-6">Veel van deze externe brigades bieden ook weer opleidingen aan die je nog veel meer inzicht in het reddingsbrigade werk kunnen geven. Sommige stranden bieden zelfs de mogelijkheid tot een betaalde bijbaan als Lifeguard!</p>
                     </div>
                 </div>
             </div>
             <div className="w-full flex justify-center">
-                <div className="max-w-7xl flex space-between w-full bg-white">
-                    <div className="grow w-1/2 text-gray-600 px-16 py-12">
+                <div className="max-w-7xl flex space-between w-full bg-white sm:flex-row flex-col-reverse ">
+                    <div className="grow sm:w-1/2 text-gray-600 px-16 sm:py-12 py-0">
                         <h1 className="font-medium leading-loose text-2xl mt-0 mb-2 inline">Eerste Hulp & Evenenementen</h1>
                         <p className="leading-loose my-6">Het verlenen van eerste hulp is een belangrijk onderdeel van de waterhulpverlening. We werken samen met partijen als het Rode Kruis en het Oranje Kruis voor EHBO opleidingen.</p>
                         <p className="leading-loose my-6">We zijn altijd op zoek naar nieuwe enthousiaste hulpverleners! Na de lifesaver of lifeguards opleiding (of zelfs tijdens om ervaring op te doen) kan je ervoor kiezen om ingezet te worden bij leuke evenementen als Freshtival, de Rutbeek triathlon en de sinterklaas intocht.</p>
                     </div>
-                    <div className="px-16 pt-12 pb-16  w-1/2">
+                    <div className="sm:px-16 sm:pt-12 sm:pb-16 w-full sm:w-1/2 h-64 sm:h-full px-8 py-6">
                         <div
                             className="w-full h-content bg-center bg-cover overflow-hidden h-full flex justify-center items-center align-center"
                             style={{backgroundImage: `url(${ehbo})`}}>
@@ -115,7 +114,7 @@ function App() {
                                                                                      href="https://www.instagram.com/reddingsbrigadeenschede/">Instagram</a> en <a
                             className="text-blue-400 font-bold"
                             href="https://www.facebook.com/ReddingsbrigadeEnschede">facebook</a></p>
-                        <div className="flex align-center justify-between">
+                        <div className="flex align-center justify-between xl:flex-row flex-col">
                             <div style={{display: 'flex', justifyContent: 'center'}}>
                                 <InstagramEmbed url="https://www.instagram.com/p/CiVLm3sDduC/" width={328}/>
                             </div>
@@ -130,17 +129,17 @@ function App() {
                 </div>
             </div>
 
-            <div className="w-full h-[35em] flex justify-center">
-                <div className="max-w-7xl flex space-between w-full bg-white">
-                    <div className="bg-[bottom_-5rem_right_4rem] bg-cover relative overflow-hidden"
+            <div className="w-full h-full xl:h-[35em] flex justify-center">
+                <div className="max-w-7xl flex space-between w-full bg-white flex-col sm:flex-row">
+                    <div className="h-80 sm:h-full bg-[top_-3rem_right_0rem] sm:bg-[bottom_0rem_right_0rem] xl:bg-[bottom_0rem_right_7rem] overflow-hidden bg-cover overflow-hidden lg:w-full w-full sm:w-1/2"
                          style={{backgroundImage: `url(${toezicht})`}}>
-                        <div className="bg-orange-500 h-[20em] w-[80em] left-[7em] relative rotate-[-75deg]"></div>
+                        <div className="hidden md:flex bg-orange-500 h-[20em] sm:h-full xl:w-[100em] w-[85em] xl:left-[-8em] lg:left-[-2em] md:left-[-11em] md:top-[5em] relative rotate-[-75deg]"></div>
                     </div>
-                    <div className="p-16 w-3/4 flex flex-col bg-orange-500 text-white">
+                    <div className="p-16 w-full md:w-3/4 flex flex-col bg-orange-500 text-white">
                         <h1 className="font-medium leading-loose text-2xl mt-0 mb-2 inline">Toezicht op & aan het
                             water</h1>
                         <p className="leading-loose my-6">Voor evenementen kunnen wij gecertificeerde lifeguards met reddingsvaartuigen leveren. Met onze kennis op het gebied van verdrinkingsongevallen en het voorkomen daarvan kunnen wij u ondersteunen bij het afdichten van dit risico.</p>
-                        <p className="leading-loose my-6">Heeft u vragen of bent u op zoek naar een inzetvoorstel met bijborende kosten dan kunt u mailen naar het onderstaande adres:</p>
+                        <p className="leading-loose my-6">Heeft u vragen of bent u op zoek naar een inzetvoorstel met bijbehorende kosten dan kunt u mailen naar het onderstaande adres:</p>
                         <a href="mailto:rescue@zpv-piranha.nl"
                            className="my-6 bg-blue-500 max-w-max hover:bg-blue-500 text-white font-bold px-4 flex items-center"><FaEnvelope  className="inline w-8 pr-2 mr-2 border-r-2 border-r-slate-50"/> <span className="block my-2">rescue@zpv-piranha.nl</span>
                         </a>
@@ -150,13 +149,13 @@ function App() {
             <footer className="p-4 bg-white sm:p-6 dark:bg-gray-400 shadow rotate-180">
                 <div className="rotate-180">
                     <div className="max-w-7xl mx-auto">
-                        <div className="md:flex md:justify-between">
-                            <div className="mb-6 md:mb-0">
-                                <Logo association="Enschede" region="IJsselland-Twente" regionClassName="text-blue-600"
-                                      associationClassName="text-blue-600" className="text-orange-500"/>
+                        <div className="md:flex md:justify-between justify-center">
+                            <div className="mb-6 md:mb-0 px-0 sm:px-24 flex">
+                                <Logo association="Enschede" region="IJsselland-Twente" regionClassName="inline-flex text-blue-600"
+                                      associationClassName="inline text-blue-600" className="text-orange-500 mx-auto flex flex-col"/>
                             </div>
-                            <div className="flex gap-2">
-                                <div className="mr-16">
+                            <div className="flex gap-2 px-0 xs:px-24 flex-col sm:flex-row justify-center w-fit mx-auto md:mx-0">
+                                <div className="sm:mr-16 flex flex-col mb-16">
                                     <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">ZPV Piranha</h2>
                                     <ul className="text-gray-600 dark:text-gray-400">
                                         <li className="mb-4">
