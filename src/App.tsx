@@ -138,21 +138,21 @@ function App() {
 
             <div className="w-full flex justify-center">
                 <div className="max-w-7xl flex space-between w-full bg-white">
-                    <div className="grow w-1/2 text-gray-600 px-16 py-12">
+                    <div className="grow w-1/2 text-gray-600 lg:px-16 md:px-12 py-12">
                         <h1 className="font-medium leading-loose text-2xl mt-0 mb-2 text-center">Social Media</h1>
                         <p className="leading-loose my-6 text-center">Volg ons op <a className="text-blue-400 font-bold"
                                                                                      href="https://www.instagram.com/reddingsbrigadeenschede/">Instagram</a> en <a
                             className="text-blue-400 font-bold"
                             href="https://www.facebook.com/ReddingsbrigadeEnschede">facebook</a></p>
-                        <div className="flex align-center justify-between xl:flex-row flex-col">
+                        <div className="flex align-center justify-around flex-row flex flex-wrap">
                             <div style={{display: 'flex', justifyContent: 'center'}}>
-                                <InstagramEmbed url="https://www.instagram.com/p/CiVLm3sDduC/" width={328}/>
+                                <InstagramEmbed url="https://www.instagram.com/p/Ceg9jrJDXU-/" width={328}/>
                             </div>
                             <div style={{display: 'flex', justifyContent: 'center'}}>
                                 <InstagramEmbed url="https://www.instagram.com/p/CeuCNH5Da7q/" width={328}/>
                             </div>
-                            <div style={{display: 'flex', justifyContent: 'center'}}>
-                                <InstagramEmbed url="https://www.instagram.com/p/Ceg9jrJDXU-/" width={328}/>
+                            <div className="hidden xl:flex">
+                                <InstagramEmbed url="https://www.instagram.com/p/CiVLm3sDduC/" width={328}/>
                             </div>
                         </div>
                     </div>
