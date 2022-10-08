@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import pool from './Media/pool.jpg'
 import ow from './Media/ow.jpeg'
 import ow2 from './Media/ow2.jpg'
@@ -7,16 +7,46 @@ import toezicht from './Media/toezicht.jpg'
 import strand from './Media/strand.jpeg'
 import {FaEnvelope} from "react-icons/fa";
 import './App.css';
-import Header from "./Components/Header";
 import {InstagramEmbed} from 'react-social-media-embed';
 import {Logo} from "./Components/Logo";
 import Rescue from "./Media/rescue.png";
 
 function App() {
+    const becomeMember = useRef<HTMLDivElement>(null);
+    const requestEvent = useRef<HTMLDivElement>(null);
+
+    const goToMember = () => {
+        becomeMember.current?.scrollIntoView({behavior: "smooth"})
+    }
+
+    const goToRequestEvent = () => {
+        requestEvent.current?.scrollIntoView({behavior: "smooth"})
+    }
     return (
         <div className="bg-slate-50 min-w-full min-h-full">
-            <Header>
-            </Header>
+            <nav className="relative z-10 shadow flex justify-center py-6 px-4 bg-white">
+                <div className="max-w-7xl w-full">
+                    <div className="flex items-center justify-center sm:justify-between sm:flex-nowrap flex-wrap w-full">
+                        <div className="flex items-center justify-center sm:justify-start flex-shrink-0 text-white sm:w-auto w-full md:w-auto">
+                            <Logo association="Enschede" region="IJsselland-Twente" regionClassName="text-blue-600"
+                                  associationClassName="inline text-blue-600" className="text-orange-500 xs:mx-auto mx-0  flex flex-col w-min
+                                  "/>
+                        </div>
+                        <div className="flex items-center flex-shrink-0 text-white my-6">
+                            <a href="#lid-worden"
+                               onClick={goToMember}
+                               className="border border-blue-400 hover:bg-blue-400 text-blue-400 hover:text-white font-bold py-2 px-4 mr-2">Lid
+                                worden
+                            </a>
+                            <button
+                                onClick={goToRequestEvent}
+                                className="border border-orange-500 hover:bg-orange-500 text-orange-500 hover:text-white font-bold py-2 px-4">Toezicht
+                                aanvragen
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
             <div className="w-full md:h-full flex justify-center">
                 <div className="max-w-7xl flex space-between w-full bg-white flex-col-reverse sm:flex-row">
                     <div className="p-16 w-full sm:w-3/4 flex flex-col bg-orange-500 text-slate-50">
@@ -93,7 +123,7 @@ function App() {
                     </div>
                 </div>
             </div>
-            <div className="w-full flex justify-center" id="#lid-worden">
+            <div className="w-full flex justify-center" ref={becomeMember}>
                 <div className="max-w-7xl flex space-between w-full bg-gradient-to-r from-cyan-500 to-blue-500 text-gray-100">
                     <div className="grow w-1/2 px-16 py-12">
                         <h1 className="text-6xl flex justify-center my-6"><img src={Rescue} className="float-left z-20" width="150em" alt=""/></h1>
@@ -135,7 +165,7 @@ function App() {
                          style={{backgroundImage: `url(${toezicht})`}}>
                         <div className="hidden md:flex bg-orange-500 h-[20em] sm:h-full xl:w-[100em] w-[85em] xl:left-[-8em] lg:left-[-2em] md:left-[-11em] md:top-[5em] relative rotate-[-75deg]"></div>
                     </div>
-                    <div className="p-16 w-full md:w-3/4 flex flex-col bg-orange-500 text-white">
+                    <div className="p-16 w-full md:w-3/4 flex flex-col bg-orange-500 text-white" ref={requestEvent}>
                         <h1 className="font-medium leading-loose text-2xl mt-0 mb-2 inline">Toezicht op & aan het
                             water</h1>
                         <p className="leading-loose my-6">Voor evenementen kunnen wij gecertificeerde lifeguards met reddingsvaartuigen leveren. Met onze kennis op het gebied van verdrinkingsongevallen en het voorkomen daarvan kunnen wij u ondersteunen bij het afdichten van dit risico.</p>
