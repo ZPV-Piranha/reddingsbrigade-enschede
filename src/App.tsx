@@ -189,7 +189,7 @@ function App() {
                                     <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">ZPV Piranha</h2>
                                     <ul className="text-gray-600 dark:text-gray-400">
                                         <li className="mb-4">
-                                            <a href="https:/zpv-piranha.nl/" className="hover:underline">Website</a>
+                                            <a href="https://zpv-piranha.nl/" className="hover:underline">Website</a>
                                         </li>
                                         <li className="mb-4">
                                             <a href="https://www.instagram.com/zpv_piranha/" className="hover:underline">Instagram</a>
