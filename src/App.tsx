@@ -180,7 +180,7 @@ function App() {
                 <div className="rotate-180">
                     <div className="max-w-7xl mx-auto">
                         <div className="md:flex md:justify-between justify-center">
-                            <div className="mb-6 md:mb-0 px-0 sm:px-24 flex">
+                            <div className="mb-6 md:mb-0 px-0 sm:pr-24 flex">
                                 <Logo association="Enschede" region="IJsselland-Twente" regionClassName="inline-flex text-blue-600"
                                       associationClassName="inline text-blue-600" className="text-orange-500 mx-auto flex flex-col"/>
                             </div>
